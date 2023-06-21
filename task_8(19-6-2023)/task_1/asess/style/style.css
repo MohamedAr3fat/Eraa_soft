@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@1,700&display=swap');
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2a5555;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contener-content {
+   width: 100vw;
+   height: 100vh;
+}
+
+.contener_one {
+    width: 65%;
+    height:100vh ;
+}
+
+.contener_one::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    transform:skewX(-9deg) ;
+    transform-origin: top right;
+    z-index: 2;
+}
+
+.text {
+    width: 27%;
+    color: white;
+    top: 19rem;
+    left: 23rem;
+}
+
+.contener_tow {
+    width:25%;
+    height: 100vh;
+    gap: 1.5rem;
+    right: 3rem;
+    flex-direction: column;
+}
+
+.input-data {
+    gap: 1rem;
+}
+
+.icon {
+    width:4rem ;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+h1 {
+    font-family: 'Tinos', serif;
+    font-size: 3rem;
+}
+
+p ,body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media screen and (max-width:600px) {
+    .contener_one {
+        width: 100%;
+    }
+
+    .contener_one::before {
+        height: 50%;
+        transform:skewX(0deg) ;
+    }
+
+    .text {
+        width: 62%;
+        color: white;
+        top: 7rem;
+        left: 7rem;
+    }
+
+    .contener_tow {
+        width:auto;
+        height: auto;
+        gap: 1.5rem;
+        right: 12rem;
+        top: 30rem;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width:601px) and (max-width: 768px) {
+    .contener_one {
+        width: 100%;
+    }
+
+    .contener_one::before {
+        height: 50%;
+        transform:skewX(0deg) ;
+    }
+
+    .text {
+        width: 70%;
+        top: 7rem;
+        left:7rem;
+        text-align: center;
+    }
+
+    .contener_tow {
+        width:auto;
+        height: auto;
+        gap: 1.5rem;
+        right: 16rem;
+        top: 30rem;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+    .text {
+        width: 53%;
+        color: white;
+        top: 15rem;
+        left: 5rem;
+    }
+
+    .contener_tow {
+        flex-direction: column;
+        top: -5rem;
+    }
+
+}
+
+@media (min-width:993px) and (max-width: 1200px) {  
+.text {
+    width: 43%;
+    color: white;
+    top: 17rem;
+    left: 8rem;
+    }
+
+    .contener_tow {
+        flex-direction: column;
+        top: -2rem;
+    }
+
+}
